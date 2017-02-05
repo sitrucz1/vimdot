@@ -86,6 +86,8 @@ set listchars=eol:¬
 set showmatch
 set incsearch
 set hlsearch
+set ignorecase
+set smartcase
 " }}}
 " Autocmd {{{
 if has("autocmd")
