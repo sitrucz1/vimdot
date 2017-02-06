@@ -69,6 +69,10 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 " Run python with current file
 nnoremap <leader>g :!python %<CR>
 " }}}
+"  Unite Plugin {{{
+nnoremap <leader>uf :Unite file<CR>
+nnoremap <leader>ub :Unite buffer<CR>
+"  }}}
 " Vim-Airline Plugin {{{
 set laststatus=2   " used in vim_airline
 set ttimeoutlen=50 " used in vim airline
