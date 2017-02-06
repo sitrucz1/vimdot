@@ -65,9 +65,6 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 " Run python with current file
 nnoremap <leader>g :!python %<CR>
 " }}}
-" NERTTree Plugin {{{
-nnoremap <F2> :NERDTreeToggle<CR>
-" }}}
 " Vim-Airline Plugin {{{
 set laststatus=2   " used in vim_airline
 set ttimeoutlen=50 " used in vim airline
