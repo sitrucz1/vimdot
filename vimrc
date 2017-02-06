@@ -49,6 +49,10 @@ set foldnestmax=10
 set foldmethod=indent
 set modelines=1
 " }}}
+" Backup {{{
+set nobackup            " DON'T keep a backup file
+set directory=$TEMP//,$TMP//,.
+" }}}
 " Leader {{{
 let mapleader = ";"
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
@@ -70,12 +74,15 @@ set laststatus=2   " used in vim_airline
 set ttimeoutlen=50 " used in vim airline
 " }}}
 " Editor {{{
+set backspace=indent,eol,start
 set ts=4 sts=4 sw=4 expandtab
 set number
 set showcmd
 set wildmenu
 set lazyredraw
-set hid
+set hidden
+set mouse=a             " use mouse in xterm to scroll
+set completeopt=menu,longest,preview
 " Use the same symbols as TextMate for tabstops and EOLs
 set listchars=eol:¬
 " }}}
@@ -86,6 +93,9 @@ set hlsearch
 set ignorecase
 set smartcase
 " }}}
+"  Diff {{{
+set diffopt+=iwhite     " ignore whitespace and end of lines for diff
+"  }}}
 " Autocmd {{{
 if has("autocmd")
   " Enable file type detection
@@ -102,6 +112,9 @@ if has("autocmd")
 
   " Treat .rss files as XML
   autocmd BufNewFile,BufRead *.rss setfiletype xml
+
+  " SQL language
+  autocmd filetype sql setlocal commentstring=--\ %s
 endif
 " }}}
 " vim:foldmethod=marker:foldlevel=0
