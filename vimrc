@@ -25,11 +25,11 @@ call vundle#end()            " required
 filetype plugin indent on    " required
 " }}}
 " Imports {{{
-" if has('win32') || has('win64')
-"     source $VIMRUNTIME/mswin.vim
+if has('win32') || has('win64')
+    source $VIMRUNTIME/mswin.vim
 " elseif has('mac')
 "     source $VIMRUNTIME/macmap.vim
-" endif
+endif
 " }}}
 " Colors {{{
 if has('gui_running')
