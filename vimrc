@@ -1,7 +1,9 @@
-﻿" VIMRC by Curtis Matz
+" VIMRC by Curtis Matz
 " Vundle Wrapper {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
+scriptencoding utf-8
+set encoding=utf-8
 
 " set the runtime path to include Vundle and initialize
 " work sometimes sets $HOME to my network home drive so force local
@@ -123,7 +125,7 @@ if has("autocmd")
   " SQL language
   autocmd filetype sql setlocal commentstring=--\ %s
   " Auto source vimrc
-  autocmd bufwritepost vimrc source $MYVIMRC
+  " autocmd bufwritepost vimrc source $MYVIMRC
 endif
 " }}}
 " vim:foldmethod=marker:foldlevel=0
