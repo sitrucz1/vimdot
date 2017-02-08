@@ -90,7 +90,7 @@ set hidden
 set mouse=a             " use mouse in xterm to scroll
 set completeopt=menu,longest,preview
 " Use the same symbols as TextMate for tabstops and EOLs
-set listchars=eol:�
+set listchars=tab:▸\ ,trail:·,eol:¬
 " }}}
 " Searching {{{
 set showmatch
