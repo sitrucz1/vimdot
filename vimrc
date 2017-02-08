@@ -1,4 +1,4 @@
-" VIMRC by Curtis Matz
+﻿" VIMRC by Curtis Matz
 " Vundle Wrapper {{{
 set nocompatible              " be iMproved, required
 filetype off                  " required
