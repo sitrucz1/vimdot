@@ -36,6 +36,7 @@ endif
 " Colors {{{
 if has('gui_running')
     let g:solarized_termcolors=256
+    let g:solarized_diffmode="high"    "default value is normal
     set background=dark
     colorscheme solarized
     if has('win32') || has('win64')
