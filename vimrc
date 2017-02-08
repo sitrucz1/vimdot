@@ -36,8 +36,10 @@ if has('gui_running')
     let g:solarized_termcolors=256
     set background=dark
     colorscheme solarized
+    if has('win32') || has('win64')
+        set guifont=Consolas:h10:b:cANSI
+    endif
 else
-    let g:solarized_termcolors=16
     colorscheme default
 endif
 syntax enable
