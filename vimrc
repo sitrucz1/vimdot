@@ -96,6 +96,7 @@ set incsearch
 set hlsearch
 set ignorecase
 set smartcase
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " }}}
 "  Diff {{{
 set diffopt+=iwhite     " ignore whitespace and end of lines for diff
