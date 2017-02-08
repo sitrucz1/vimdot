@@ -103,7 +103,8 @@ set smartcase
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " }}}
 "  Diff {{{
-set diffopt+=iwhite     " ignore whitespace and end of lines for diff
+" ignore whitespace and end of lines for diff as well as do a veritical diff
+set diffopt+=iwhite,vertical
 "  }}}
 " Autocmd {{{
 if has("autocmd")
