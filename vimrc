@@ -22,6 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'unite.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
+Plugin 'godlygeek/tabular'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
