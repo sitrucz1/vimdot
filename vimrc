@@ -84,9 +84,10 @@ set laststatus=2   " used in vim_airline
 set ttimeoutlen=50 " used in vim airline
 " }}}
 " Editor {{{
+set path+=**
 set backspace=indent,eol,start
 set ts=4 sts=4 sw=4 expandtab
-set number
+set relativenumber
 set showcmd
 set wildmenu
 set lazyredraw
