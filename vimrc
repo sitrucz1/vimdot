@@ -30,6 +30,8 @@ filetype plugin indent on    " required
 " Imports {{{
 if has('win32') || has('win64')
     source $VIMRUNTIME/mswin.vim
+    set grepprg=findstr\ /sn\ $*
+    set grepformat=%f:%l:%m
 " elseif has('mac')
 "     source $VIMRUNTIME/macmap.vim
 endif
