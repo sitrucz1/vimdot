@@ -37,6 +37,11 @@ if has('win32') || has('win64')
 "     source $VIMRUNTIME/macmap.vim
 endif
 " }}}
+" Grep {{{
+if executable('ag')
+    set grepprg=ag\ --vimgrep\ $*
+endif
+" }}}
 " Colors {{{
 if has('gui_running')
     let g:solarized_termcolors=256
