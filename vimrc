@@ -31,8 +31,6 @@ filetype plugin indent on    " required
 " Imports {{{
 if has('win32') || has('win64')
     source $VIMRUNTIME/mswin.vim
-    set grepprg=findstr\ /sn\ $*
-    set grepformat=%f:%l:%m
 " elseif has('mac')
 "     source $VIMRUNTIME/macmap.vim
 endif
@@ -40,6 +38,10 @@ endif
 " Grep {{{
 if executable('ag')
     set grepprg=ag\ --vimgrep\ $*
+    set grepformat=%f:%l:%c:%m
+elseif executable('findstr')
+    set grepprg=findstr\ /sn\ $*
+    set grepformat=%f:%l:%m
 endif
 " }}}
 " Colors {{{
