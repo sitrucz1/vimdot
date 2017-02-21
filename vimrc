@@ -84,6 +84,8 @@ nnoremap <leader>dws :%s/\s\+$<cr>
 nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 " Run python with current file
 nnoremap <leader>g :!python %<CR>
+" Run cscript with current file
+nnoremap <leader>v :!cscript %<CR>
 " }}}
 "  Unite Plugin {{{
 nnoremap <leader>uf :Unite file<CR>
@@ -97,6 +99,7 @@ set ttimeoutlen=50 " used in vim airline
 set path+=**
 set backspace=indent,eol,start
 set ts=4 sts=4 sw=4 expandtab
+set number
 set relativenumber
 set showcmd
 set wildmenu
