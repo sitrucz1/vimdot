@@ -142,7 +142,8 @@ if has("autocmd")
   " SQL language
   autocmd filetype sql setlocal commentstring=--\ %s
   " Auto source vimrc
-  " autocmd bufwritepost vimrc source $MYVIMRC
+  " VB Language
+  autocmd filetype vb setlocal commentstring='\ %s
 endif
 " }}}
 " vim:foldmethod=marker:foldlevel=0
