@@ -26,6 +26,7 @@ Plugin 'unite.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
+Plugin 'scrooloose/syntastic'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -123,6 +124,15 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 "  Diff {{{
 " ignore whitespace and end of lines for diff as well as do a veritical diff
 set diffopt+=iwhite,vertical
+"  }}}
+"  Syntastic Plugin {{{
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 "  }}}
 " Autocmd {{{
 if has("autocmd")
