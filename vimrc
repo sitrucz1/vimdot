@@ -75,7 +75,7 @@ set directory=$TEMP//,$TMP//,.
 " Leader {{{
 let mapleader = ";"
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <silent> <leader>sv :source $MYVIMRC<cr>:noh<CR>
 imap jj <esc>
 nnoremap , <C-w>
 nnoremap ,, <C-w>w
@@ -89,6 +89,9 @@ nnoremap <leader>" viw<esc>a"<esc>hbi"<esc>lel
 nnoremap <leader>g :!python %<CR>
 " Run cscript with current file
 nnoremap <leader>v :!cscript %<CR>
+" SQL string formatting
+nnoremap <silent> <leader>, :%s/\n/,/g<CR>$x0:noh<CR>
+nnoremap <silent> <leader>' :%s/\n/','/g<CR>I'<esc>$xx0:noh<CR>
 " }}}
 "  Unite Plugin {{{
 nnoremap <leader>uf :Unite file<CR>
