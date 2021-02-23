@@ -22,7 +22,7 @@ Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'tpope/vim-abolish'
 Plugin 'tpope/vim-repeat'
-Plugin 'unite.vim'
+" Plugin 'unite.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'godlygeek/tabular'
@@ -76,7 +76,7 @@ set directory=$TEMP//,$TMP//,.
 let mapleader = ";"
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <silent> <leader>sv :source $MYVIMRC<cr>:noh<CR>
-imap jj <esc>
+imap jk <esc>
 nnoremap , <C-w>
 nnoremap ,, <C-w>w
 " Shortcut to rapidly toggle `set list`
